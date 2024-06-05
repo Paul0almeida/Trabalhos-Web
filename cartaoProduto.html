@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="produtos.css">
+    <title>Produtos</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="perfil.html#perfil" href="">Perfil</a></li>
+            <li><a href="listaTarefas.html#tarefas">Tarefas</a></li>
+            <li><a href="cartaoProduto.html#produtos">Produto</a></li>
+        </ul>
+    </nav>
+    <section id="produtos">
+        <div class="container">
+            <h1>Loja de Produtos</h1>
+            <br><br>
+            <div class="product">
+                <img src="imagens/tijolo.jpg" alt="Produto 1">
+                <h2>Tijolos</h2>
+                <p>0,70€ cada</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="imagens/saco-cimento.jpg" alt="Produto 2">
+                <h2>Saco Cimento 25kg</h2>
+                <p>3,99€</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product">
+                <img src="imagens/máquina cimento.jpg" alt="Produto 3">
+                <h2>Misturadora Cimento</h2>
+                <p>359€</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="perfil.css">
+    <title>Perfil</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="perfil.html#perfil" href="">Perfil</a></li>
+            <li><a href="listaTarefas.html#tarefas">Tarefas</a></li>
+            <li><a href="cartaoProduto.html#produtos">Produto</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br>
+    <section id="perfil">
+        <br><br><br><br><br><br><br><br>
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="imagens/bob-removebg-preview.png" alt="Profile Picture" class="profile-picture">
+                <h1 class="username">Bob Construtor</h1>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Localização:</span>
+                        <p>Porto, Portugal</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Aniversário:</span>
+                        <p>1 Setembro, 2015</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Email:</span>
+                        <p>bobConstrutor@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Profile Posts -->
+            <div class="profile-posts">
+                <h2>Postagens Recentes</h2>
+                <br>
+                <ul>
+                    <li>
+                        <p>Acabei uma obra!</p>
+                        <span>2 hours ago</span>
+                    </li>
+                    <li>
+                        <p>Eu sou o Bob Construtor</p>
+                        <span>1 day ago</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Profile Friends -->
+            <div class="profile-friends">
+                <h2>Amigos</h2>
+                <br>
+                <ul>
+                    <li>
+                        <img src="imagens/Suricato.jpg" alt="Friend 1" width="45" height="45">
+                        <p>Jane Doe</p>
+                    </li>
+                    <li>
+                        <img src="imagens/foto-de-perfil.jpg" alt="Friend 2" width="45" height="45">
+                        <p>Rob Smith</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

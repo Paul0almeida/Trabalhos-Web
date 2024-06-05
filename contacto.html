@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Fotografia de Autor</a>
+        <ul class="list">
+          <li><a href="portefolio.html">Portefólio</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button class="search">Search</button>
+        <button class="menu">Menu</button>
+    </nav>
+
+    <h1>Formulário de Contato</h1>
+
+      <form action="enviar-contato.php" method="post" style="margin-top: 150px;">
+        <label for="nome" style="color: black;">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
